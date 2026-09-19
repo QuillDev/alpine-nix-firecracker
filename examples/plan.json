@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "nodes": [{
+    "id": "hello",
+    "root": "/workspace",
+    "env": {},
+    "prepare": [],
+    "commands": [{
+      "id": "server",
+      "command": "python3 -u -m http.server 8080 --bind 0.0.0.0",
+      "readyPattern": "Serving HTTP",
+      "readyTimeoutMs": 30000
+    }]
+  }]
+}
